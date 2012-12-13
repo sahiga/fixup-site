@@ -1,0 +1,284 @@
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat-Bold'), url(http://themes.googleusercontent.com/static/fonts/montserrat/v3/IQHow_FEYlDC4Gzy_m8fcnbFhgvWbfSbdVg11QabG8w.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat-Regular'), url(http://themes.googleusercontent.com/static/fonts/montserrat/v3/zhcz-_WihjSQC0oHJ9TCYL3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family:Helvetica, Arial, sans-serif;
+	font-size:0.9em;
+	line-height:1.6em;
+	color:#e1c7a7;
+	text-shadow: 1px 1px 1px #1c1c1c;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+header {
+	display:block;
+	-moz-box-shadow:0 0 5px 5px #271d16;
+	-webkit-box-shadow:0 0 5px 5px #271d16;
+	box-shadow:0 0 5px 5px #271d16;
+	overflow:hidden;
+	}
+	
+footer {
+	display:block;
+	overflow:hidden;
+	padding:2%;
+	}
+	
+footer ul {
+	text-align:right;
+	list-style-type:none;
+	}
+
+footer li {
+	display:inline-block;
+	padding:0 2%;
+	text-shadow:none;
+	}
+
+a:link, a:visited {
+	color:#c7c7c7;
+	text-decoration:none;
+	}
+
+a:hover, a:active {
+	color:#744f21;
+	}
+
+body#home a#home,
+body#blog a#blog,
+body#about a#about,
+body#toc a#toc,
+body#pp a#pp {
+	color:#744f21;
+	}
+	
+section {
+	display:block;
+	padding:2%;
+	overflow:hidden;
+	}
+
+p {
+	padding:1% 0;
+	}
+
+.small {
+	font-size:0.7em;
+	}
+
+.container {
+	width:60%;
+	margin:0 auto;
+	}	
+
+.short {
+	width:60%;
+	float:left;
+	}
+
+.shorter {
+	width:86%;
+	}
+	
+h1 {
+	font-family:'Montserrat', Helvetica, Arial, sans-serif;
+	font-weight:700;
+	margin:2% 0;
+	font-size:3em;
+	line-height:1em;
+	}
+	
+h2 {
+	font-family:'Montserrat', Helvetica, Arial, sans-serif;
+	font-weight:400;
+	margin:4% 0 1% 0;
+	font-size:1.4em;
+	color:#ebdacd;
+	}
+
+#logo {
+	width:20%;
+	height:20%;
+	float:left;
+	}
+
+#store {
+	float:right;
+	padding:3% 0;
+	}
+
+#hero {
+	background:url(bg.png) top right no-repeat #744f21;
+	background-size:100%;
+	color:#fff;
+	font-size:1.2em;
+	-moz-box-shadow:inset 0 0 10px 0 #543712;
+	-webkit-box-shadow:inset 0 0 10px 0 #543712;
+	box-shadow:inset 0 0 10px 0 #543712;
+	padding:8% 0;
+	}
+	
+#watch {
+	padding:3%;
+	background:url(video_bg.png) top right #fff;
+	background-size:100%;
+	}
+
+#video {
+	float:left;
+	-moz-box-shadow:0 0 5px 5px #bebebe;
+	-webkit-box-shadow:0 0 5px 5px #bebebe;
+	box-shadow:0 0 5px 5px #bebebe;
+	}
+	
+#arrow {
+	float:left;
+	width:30%;
+	height:30%;
+	padding:8% 0 0 0;
+	}
+	
+.divider {
+	float:left;
+	}
+
+#points {
+	background-color:#4c3a2c;
+	-moz-box-shadow:inset 0 0 10px 0 #271d16;
+	-webkit-box-shadow:inset 0 0 10px 0 #271d16;
+	box-shadow:inset 0 0 10px 0 #271d16;
+	}
+	
+#solution {
+	background-color:#744f21;
+	-moz-box-shadow:inset 0 0 10px 0 #543712;
+	-webkit-box-shadow:inset 0 0 10px 0 #543712;
+	box-shadow:inset 0 0 10px 0 #543712;
+	}
+
+#points .left {
+	float:left;
+	width:26%;
+	margin:0 4% 0 0;
+	}
+	
+#points .mid {
+	float:left;
+	width:26%;
+	margin:0 5%;
+	}
+
+#points .right {
+	float:left;
+	width:26%;
+	margin:0 0 0 4%;
+	}
+
+#circles {
+	padding:5% 0;
+	}
+
+#circles .left {
+	float:left;
+	width:20%;
+	margin:0 3% 0 0;
+	}
+
+#circles .mid {
+	float:left;
+	width:20%;
+	margin:0 2%;
+	}
+
+#circles .right {
+	float:left;
+	width:20%;
+	margin:0 0 0 3%;
+	}
+	
+#browse, #connect {
+	padding:0 25%;
+	}
+
+#fix {
+	padding:0 45%;
+	}
+
+.flow {
+	float:left;
+	width:8%;
+	height:8%;
+	padding:10% 0 0 3%;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
