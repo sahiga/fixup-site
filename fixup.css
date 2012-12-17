@@ -1,3 +1,4 @@
+/* Web fonts */
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
@@ -12,7 +13,8 @@
   src: local('Montserrat-Regular'), url(http://themes.googleusercontent.com/static/fonts/montserrat/v3/zhcz-_WihjSQC0oHJ9TCYL3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
 }
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* Reset CSS
+   http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -41,14 +43,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
-	font-family:Helvetica, Arial, sans-serif;
-	font-size:0.9em;
-	line-height:1.6em;
-	color:#e1c7a7;
-	text-shadow: 1px 1px 1px #1c1c1c;
-}
+
 ol, ul {
 	list-style: none;
 }
@@ -65,40 +60,24 @@ table {
 	border-spacing: 0;
 }
 
-header {
-	-moz-box-shadow:0 0 5px 5px #271d16;
-	-webkit-box-shadow:0 0 5px 5px #271d16;
-	box-shadow:0 0 5px 5px #271d16;
-	overflow:hidden;
-	}
-	
-footer {
-	display:block;
-	overflow:hidden;
-	padding:2%;
-	}
-	
-footer ul {
-	list-style-type:none;
-	text-align:right;
-	}
-
-footer li {
-	display:inline-block;
-	padding:0 2%;
-	font-size:0.8em;
-	text-shadow:none;
-	}
+/* Base numbers and colors */
+body {
+	font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size:0.9em;
+	line-height:1.6em;
+	color:#e1c7a7;
+	text-shadow:1px 1px 1px #1c1c1c;
+}
 
 a:link, a:visited {
-	color:#c7c7c7;
+	color:#adb4c7;
 	text-decoration:none;
 	}
 
 a:hover, a:active {
-	color:#744f21;
+	border-bottom:1px solid #adb4c7;
 	}
-
+	
 body#home a#home,
 body#blog a#blog,
 body#about a#about,
@@ -117,26 +96,13 @@ section {
 	}
 
 p {
-	padding:1% 0;
-	}
-
-.small {
-	font-size:0.7em;
+	margin:3% 0;
 	}
 
 .container {
 	width:60%;
 	margin:0 auto;
 	}	
-
-.short {
-	width:60%;
-	float:left;
-	}
-
-.shorter {
-	width:86%;
-	}
 	
 h1 {
 	font-family:'Montserrat', Helvetica, Arial, sans-serif;
@@ -149,9 +115,17 @@ h1 {
 h2 {
 	font-family:'Montserrat', Helvetica, Arial, sans-serif;
 	font-weight:400;
-	margin:4% 0 1% 0;
+	margin:3% 0 1% 0;
 	font-size:1.4em;
 	color:#ebdacd;
+	}
+	
+/* Header (Logo + App Store button) */
+header {
+	-moz-box-shadow:0 0 5px 5px #271d16;
+	-webkit-box-shadow:0 0 5px 5px #271d16;
+	box-shadow:0 0 5px 5px #271d16;
+	overflow:hidden;
 	}
 
 #logo {
@@ -166,7 +140,36 @@ h2 {
 	float:right;
 	padding:20px 0;
 	}
+	
+/* Footer menu */
+footer {
+	display:block;
+	overflow:hidden;
+	padding:2%;
+	}
+	
+footer ul {
+	list-style-type:none;
+	text-align:right;
+	}
 
+footer li {
+	display:inline-block;
+	padding:0 2%;
+	font-size:0.8em;
+	text-shadow:none;
+	}
+
+footer a:link, footer a:visited {
+	color:#c7c7c7;
+	}
+
+footer a:hover, footer a:active {
+	color:#744f21;
+	border-bottom:1px solid #744f21;
+	}
+
+/* Hero section */
 #hero {
 	background:url(bg.png) top right no-repeat #744f21;
 	background-size:cover;
@@ -175,9 +178,23 @@ h2 {
 	-moz-box-shadow:inset 0 0 10px 0 #543712;
 	-webkit-box-shadow:inset 0 0 10px 0 #543712;
 	box-shadow:inset 0 0 10px 0 #543712;
-	padding:8% 0;
+	padding:8% 2%;
 	}
 
+.small {
+	font-size:0.7em;
+	}
+	
+.short {
+	width:60%;
+	float:left;
+	}
+
+.shorter {
+	width:86%;
+	}
+	
+/* Watch video section */
 #watch {
 	padding:3%;
 	background:url(video_bg.png) top right #fff;
@@ -198,22 +215,33 @@ h2 {
 	padding:8% 0 0 0;
 	}
 	
-.divider {
-	float:left;
-	}
-
+	
+/* Three columns */
 #points {
 	background-color:#4c3a2c;
 	-moz-box-shadow:inset 0 0 10px 0 #271d16;
 	-webkit-box-shadow:inset 0 0 10px 0 #271d16;
 	box-shadow:inset 0 0 10px 0 #271d16;
 	}
+
+/*	
+#points div.col {
+	float:left;
+	width:26%;
+	margin:1% 5%;
+	}
+
+#points div.col:first-of-type {
+	margin:1% 4% 0 0;
+	}
 	
-#solution {
-	background-color:#744f21;
-	-moz-box-shadow:inset 0 0 10px 0 #543712;
-	-webkit-box-shadow:inset 0 0 10px 0 #543712;
-	box-shadow:inset 0 0 10px 0 #543712;
+#points div.col:last-of-type {
+	margin:1% 0 0 4%;
+	}
+*/
+	
+.divider {
+	float:left;
 	}
 
 #points div.left {
@@ -234,9 +262,26 @@ h2 {
 	margin:0 0 0 4%;
 	}
 
+/* Browse-Connect-Fix section */
 #circles {
 	padding:5% 0;
 	}
+
+/*	
+#circles img.col {
+	float:left;
+	width:22%;
+	margin:0 2%;
+	}
+	
+#circles img.col:first-of-type {
+	margin:0 3% 0 0;
+	}
+	
+#circles img.col:last-of-type {
+	margin:0 0 0 3%;
+	}
+*/
 
 #circles img.left {
 	float:left;
@@ -270,9 +315,105 @@ h2 {
 #fix {
 	padding:0 45%;
 	}
-
-
 	
+/* Problem-Solution section */
+#solution {
+	background-color:#744f21;
+	-moz-box-shadow:inset 0 0 10px 0 #543712;
+	-webkit-box-shadow:inset 0 0 10px 0 #543712;
+	box-shadow:inset 0 0 10px 0 #543712;
+	}
+	
+/* ABOUT PAGE */
+
+/* Summary */
+#summary {
+	background:#4c392c;
+	background-size:cover;
+	color:#fff;
+	font-size:1.2em;
+	-moz-box-shadow:inset 0 0 10px 0 #543712;
+	-webkit-box-shadow:inset 0 0 10px 0 #543712;
+	box-shadow:inset 0 0 10px 0 #543712;
+	padding:8% 2%;
+	}
+
+/* Grid of boxes */
+#grid {
+	background:#edf1fd;
+	}
+
+#grid img {
+	width:50px;
+	height:50px;
+	margin:15px auto;
+	}
+
+#grid p {
+	color:#5a6074;
+	text-shadow:none;
+	font-size:0.75em;
+	font-weight:600;
+	line-height:1.4em;
+	}
+	
+.cell {
+	color:#5a6074;
+	text-shadow:none;
+	width:130px;
+	height:130px;
+	margin:3%;
+	padding:1%;
+	background-color:#fff;
+	float:left;
+	border-radius:5px;
+	-moz-box-shadow:0 2px 3px 0.5px #d3d7e5;
+	-webkit-box-shadow:0 2px 3px 0.5px #d3d7e5;
+	box-shadow:0 2px 3px 0.5px #d3d7e5;
+	}
+
+/*
+.cell:nth-of-type(4n + 1) {
+	margin:3% 3% 3% 0;
+	}
+	
+.cell:nth-of-type(4n) {
+	margin:3% 0 3% 3%;
+	} */
+
+/* Company information */
+#contact {
+	background-color:#4c392c;
+	-moz-box-shadow:inset 0 0 10px 0 #543712;
+	-webkit-box-shadow:inset 0 0 10px 0 #543712;
+	box-shadow:inset 0 0 10px 0 #543712;
+	}
+	
+#contact h2 {
+	color:#fce2d2;
+	}
+	
+#contact p {
+	color:#cdb09e;
+	}
+
+/* FAQ */
+#faq {
+	background:#edf1fd;
+	}
+
+#grid h2, #faq h2 {	
+	color:#33353e;
+	text-shadow:none;
+	}
+	
+#faq p {
+	color:#5a6074;
+	text-shadow:none;
+	font-size:0.9em;
+	}
+
+/* Responsive media queries */
 @media (max-width:1500px) {
 	header div.container {
 		padding:0 4%;
@@ -324,7 +465,7 @@ h2 {
 	.divider {
 		display:none;
 		}
-	
+		
 	}
 	
 @media (max-width:700px) {
@@ -339,7 +480,12 @@ h2 {
 		}
 	
 	#hero {
+		background:#744f21;
 		font-size:1em;
+		}
+	
+	#watch {
+		background:#fff;
 		}
 	
 	#logo {
