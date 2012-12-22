@@ -3,7 +3,8 @@
 
 <head>
 	<title>FixUp</title>
-	<link href="stylesheets/style.css" media="all" rel="stylesheet" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="stylesheets/style.css" media="screen" rel="stylesheet" type="text/css" />
 	<link href="stylesheets/jquery.qtip.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -33,129 +34,131 @@
 		<div class="container">
 			<h2>FixUp everything</h2>
 			<div id="grid_container">
-				<div class="cell">
+				<div class="cell" id="tire">
 					<h3 class="answer">Flat tire</h3>
-					<img />
+					<img src="img/icon-tire.png" />
 					<p>I'm stuck on the side of the road with a flat tire.</p>
 				</div><!--/.cell-->
 				<div class="answer">
 					Not to worry. I can guide you the process pretty easily, and it'll be done within 15 minutes&mdash;less time than it usually takes for a tow to arrive. First, turn on the hazard lights. Then open the trunk and take out a spare tire. See that leverage pipe, jack, lug-nut wrench and flashlight over there. Let's take those out&hellip;
 				</div><!--/.answer-->
-				<div class="cell">
+				<div class="cell" id="camera">
 					<h3 class="answer">Broken camera</h3>
-					<img />
+					<img src="img/icon-camera.png" />
 					<p>My camera broke. Is it the battery?</p>
 				</div><!--/.cell-->
 				<div class="answer">
 					We can do a few tests to make sure. I see that you already tried a brand new battery and that didn't work. As a next step, we're going to try replacing the memory card&hellip;
 				</div><!--/.answer-->
-				<div class="cell">
+				<div class="cell" id="water">
 					<h3 class="answer">Water, water everywhere, and not a drop that's hot</h3>
-					<img />
+					<img src="img/icon-water.png" />
 					<p>There's no more hot water. What's the issue?</p>
 				</div><!--/.cell-->
 				<div class="answer">
 					It could be the water heater. Let's take a look at it. Before replacing it, we need to make sure the thermocouple still works. It's a simple, inexpensive repair that could save you a bundle.
 				</div><!--/.answer-->
-				<div class="cell">
+				<div class="cell" id="power">
 					<h3 class="answer">Power outage</h3>
-					<img />
+					<img src="img/icon-power.png" />
 					<p>The power is out. Help.</p>
 				</div><!--/.cell-->
 				<div class="answer">
 					OK, first we need to go to the fuse box. Do you know where that is? OK, great. And I see that the fuse on the bottom left has popped out. You simply need to press that one in, and you're good to go.
 				</div><!--/.answer-->
-				<div class="cell">
+				<div class="cell" id="stains">
 					<h3 class="answer">Tough stains</h3>
-					<img />
+					<img src="img/icon-stains.png" />
 					<p>My carpet is stained. How do I get it out?</p>
 				</div><!--/.cell-->
 				<div class="answer">
 					Yeah, that stain looks pretty bad, but there are a few little tricks we use to get it out. The first thing we need to do is simply blot the spot with a dry towel. Rinse thoroughly with clean water, then blot again. Never scrub the carpet, or you risk ruining the carpet fibers or letting the spill soak through to the carpet pad. And then&hellip;
 				</div><!--/.answer-->
-				<div class="cell">
+				<div class="cell" id="holiday">
 					<h3 class="answer">Holiday help</h3>
-					<img />
+					<img src="img/icon-holiday.png" />
 					<p>How do I hang up these Christmas lights?</p>
 				</div><!--/.cell-->
 				<div class="answer">
 					First, let's locate the power sources nearest the roof line. It will probably be on the porch, as most houses do not have a power outlet near the roof. You're going to need at least one good extension cord. Select an exterior cord which is compatible with your lights, and with the weather it will endure&hellip;
 				</div><!--/.answer-->
-				<div class="cell">
+				<div class="cell" id="fridge">
 					<h3 class="answer">Lukewarm fridge</h3>
-					<img />
+					<img src="img/icon-fridge.png" />
 					<p>My refrigerator is no longer cold.</p>
 				</div><!--/.cell-->
 				<div class="answer">
 					OK, so first, we need to check the temperature setting inside the refrigerator. It looks like it was accidentally set to a warmer setting. Let's now switch it to colder and listen for the compressor to turn on.
 				</div><!--/.answer-->
-				<div class="cell">
+				<div class="cell" id="wall">
 					<h3 class="answer">Wall repair</h3>
-					<img />
+					<img src="img/icon-wall.png" />
 					<p>There's a hole in my wall.</p>
 				</div><!--/.cell-->
 				<div class="answer">
 					Let's gather our materials. You'll need sandpaper, a putty knife, drywall patching compound (spackle or plaster), a wet sponge or spray bottle, paint and a paintbrush&hellip;
 				</div><!--/.answer-->
-				<div class="cell">
+				<div class="cell" id="sink">
 					<h3 class="answer">Clogged sink</h3>
-					<img />
+					<img src="img/icon-sink.png" />
 					<p>The drain of my sink is clogged. What do I do?</p>
 				</div><!--/.cell-->
 				<div class="answer">
 					It sounds like you tried Drano, and you tried plunging it, and none of that worked. The next step is using a snake. A snake is an item you can get your local Home Depot or Lowes. Once you're at the store, you can call me back, and I'll tell you the best one to get for your issue.
 				</div><!--/.answer-->
-				<div class="cell">
+				<div class="cell" id="chimney">
 					<h3 class="answer">Where there's smoke, there's fire</h3>
-					<img />
+					<img src="img/icon-chimney.png" />
 					<p>My chimney seems smokey. What is causing that?</p>
 				</div><!--/.cell-->
 				<div class="answer">
 					This is an easy fix. It looks like you just need to open your flue. If you can turn on the light of your iPhone camera and reach in your fireplace, I can direct you where exactly it is. Then, you just need to open it. 
 				</div><!--/.answer-->
-				<div class="cell">
-					<h3 class="answer">Television setup</h3>
-					<img />
-					<p>I can't program my TV. How do I get it to work?</p>
-				</div><!--/.cell-->
-				<div class="answer">
-					OK. Let's trouble shoot this problem together. First, let's take a look at the brand of your TV and the remote control. I see it's a Vizio. No worries. I can walk you thru the programming. It's pretty easy&hellip;
-				</div><!--/.answer-->
-				<div class="cell">
-					<h3 class="answer">Furniture repair</h3>
-					<img />
-					<p>I broke a piece of furniture. How do I fix it?</p>
-				</div><!--/.cell-->
-				<div class="answer">
-					Oh, I see. You're going to need a few supplies first. Let's get some glue and a Phillips head screwdriver. If you have a putty knife, that would be great as well. 
-				</div><!--/.answer-->
-				<div class="cell">
+
+								<div class="cell" id="crib">
 					<h3 class="answer">Furniture setup</h3>
-					<img />
+					<img src="img/icon-crib.png" />
 					<p>How do I put toge&shy;ther this baby crib (or baby toy, bed, etc.)?</p>
 				</div><!--/.cell-->
 				<div class="answer">
 					I know this can be daunting, but it's easier than it looks. First let's lay out all the separated items in an organized way on the floor. Then, I want you to read me the first step of the instructions, and I'll walk you through the process. 
 				</div><!--/.answer-->
-				<div class="cell">
+				<div class="cell" id="printer">
 					<h3 class="answer">Stuck printer</h3>
-					<img />
+					<img src="img/icon-printer.png" />
 					<p>My printer is out of warranty, and the cartridge is stuck.</p>
 				</div><!--/.cell-->
 				<div class="answer">
 					If you can point your iPhone to the carriage area and turn on the flashlight, I can see if the carriage is either obstructed or the mechanism is worn out and jammed. There could be some foreign objects or loose parts. (Kids are really good at poking all sorts of stuff into anything they can.) 
 				</div><!--/.answer-->
-				<div class="cell">
+				<div class="cell" id="furniture">
+					<h3 class="answer">Furniture repair</h3>
+					<img src="img/icon-furniture.png" />
+					<p>I broke a piece of furniture. How do I fix it?</p>
+				</div><!--/.cell-->
+				<div class="answer">
+					Oh, I see. You're going to need a few supplies first. Let's get some glue and a Phillips head screwdriver. If you have a putty knife, that would be great as well. 
+				</div><!--/.answer-->
+				<div class="cell" id="tv">
+					<h3 class="answer">Television setup</h3>
+					<img src="img/icon-tv.png" />
+					<p>I can't program my TV. How do I get it to work?</p>
+				</div><!--/.cell-->
+				<div class="answer">
+					OK. Let's trouble shoot this problem together. First, let's take a look at the brand of your TV and the remote control. I see it's a Vizio. No worries. I can walk you thru the programming. It's pretty easy&hellip;
+				</div><!--/.answer-->
+
+				<div class="cell" id="toilet">
 					<h3 class="answer">Running toilet</h3>
-					<img />
+					<img src="img/icon-toilet.png" />
 					<p>My toilet keeps running after I flush it. What's the deal?</p>
 				</div><!--/.cell-->
 				<div class="answer">
 					Let's lift the tank lid and look at it. Looks like the flapper is stuck open. Let's reach in and close it with your hand. Now, if it keeps sticking, the chain might be catching on something or the flapper might be catching on the chain. Try threading the flapper chain through a plastic soda straw to prevent a long chain from getting stuck on things and preventing the flapper from seating properly.
 				</div><!--/.answer-->
-				<div class="cell">
+				<div class="cell" id="light">
 					<h3 class="answer">Flickering light</h3>
-					<img />
+					<img src="img/icon-light.png" />
 					<p>This lightbulb keeps flickering. How do I get it to stop?</p>
 				</div><!--/.cell-->
 				<div class="answer">

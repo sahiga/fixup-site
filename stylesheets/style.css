@@ -23,6 +23,16 @@ Tags: 			starkers, naked, clean, basic
   src: local('Montserrat-Regular'), url(http://themes.googleusercontent.com/static/fonts/montserrat/v3/zhcz-_WihjSQC0oHJ9TCYL3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
 }
 
+/* Box sizing for all elements */
+* {
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	box-sizing:border-box;
+	}
+
+
 /* Reset CSS
    http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -350,7 +360,7 @@ footer a:hover, footer a:active {
 
 /* Summary */
 #summary {
-	background:#4c392c;
+	background:url(../img/summary.png) #4c392c;
 	background-size:cover;
 	color:#fff;
 	font-size:1.2em;
@@ -375,11 +385,11 @@ footer a:hover, footer a:active {
 .cell {
 	color:#5a6074;
 	text-shadow:none;
-	width:110px;
-	height:110px;
+	width:160px;
+	height:160px;
 	margin:22px 0;
 	padding:3%;
-	background-color:#fff;
+	background:#fff;
 	float:left;
 	border-radius:5px;
 	-moz-box-shadow:0 2px 3px 0.5px #d3d7e5;
@@ -388,9 +398,7 @@ footer a:hover, footer a:active {
 	}
 
 .cell img {
-	width:60px;
-	height:60px;
-	margin:2px auto;
+	margin:4% auto;
 	}
 
 .cell p {
@@ -399,15 +407,77 @@ footer a:hover, footer a:active {
 	font-size:0.78em;
 	line-height:1.4em;
 	font-weight:600;
-	-ms-word-break:break-all;
-	word-break:break-all;
-	word-break:break-word;
 	}
 	
 .answer {
 	display:none;
 	}
 
+
+#tire {
+	background-position:30px 30px;
+		}
+
+#camera {
+	background-position:30px -160px;
+	}
+
+#water {
+	background-position:30px -355px;
+	}
+
+
+#power {
+	background-position:30px -565px;
+	}
+
+#stains {
+	background-position:-188px 30px;
+	}
+
+#holiday {
+	background-position:-188px -160px;
+	}
+
+#fridge {
+	background-position:-188px -355px;
+	}
+
+#wall {
+	background-position:-188px -565px;
+	}
+	
+#sink {
+	background-position:-428px 22px;
+	}
+
+#furniture {
+	background-position:-428px -160px;
+	}
+
+#crib {
+	background-position:-428px -355px;
+	}
+
+#chimney {
+	background-position:-428px -565px;
+	}
+
+#tv {
+	background-position:-668px 22px;
+	}
+
+#printer {
+	background-position:-668px -160px;
+	}
+	
+#toilet {
+	background-position:-668px -358px;
+	}
+	
+#light {
+	background-position:-668px -565px;
+	}
 
 /* Masonry transitions */
 .masonry,
@@ -501,6 +571,8 @@ footer a:hover, footer a:active {
 
 @media (max-width:900px) {
 	.cell {
+		width:150px;
+		height:150px;
 		margin:5px 0;
 	}
 
@@ -532,7 +604,7 @@ footer a:hover, footer a:active {
 @media (max-width:768px) {
 	.cell {
 		margin:5px 0;
-		width:42%;
+		width:48%;
 	}
 
 	.cell p {
@@ -540,6 +612,72 @@ footer a:hover, footer a:active {
 		font-size:0.9em;
 		text-align:center;
 	}
+
+#tire {
+	background-position:90px 30px;
+		}
+
+#camera {
+	background-position:90px -160px;
+	}
+
+#water {
+	background-position:90px -355px;
+	}
+
+
+#power {
+	background-position:90px -565px;
+	}
+
+#stains {
+	background-position:-128px 30px;
+	}
+
+#holiday {
+	background-position:-128px -160px;
+	}
+
+#fridge {
+	background-position:-128px -355px;
+	}
+
+#wall {
+	background-position:-128px -565px;
+	}
+	
+#sink {
+	background-position:-368px 22px;
+	}
+
+#furniture {
+	background-position:-368px -160px;
+	}
+
+#crib {
+	background-position:-368px -355px;
+	}
+
+#chimney {
+	background-position:-368px -565px;
+	}
+
+#tv {
+	background-position:-608px 22px;
+	}
+
+#printer {
+	background-position:-608px -160px;
+	}
+	
+#toilet {
+	background-position:-608px -358px;
+	}
+	
+#light {
+	background-position:-608px -565px;
+	}
+
 
 	#video {
 		width:auto;
@@ -654,7 +792,7 @@ footer a:hover, footer a:active {
 		}
 		
 	.cell {
-		background:#edf1fd;
+		background-color:#edf1fd;
 		margin:5px;
 		width:90%;
 		-webkit-box-shadow:none;
@@ -663,6 +801,73 @@ footer a:hover, footer a:active {
 		-o-box-shadow:none;
 		box-shadow:none;
 		}
+		
+		
+#tire {
+	background-position:10px 30px;
+		}
+
+#camera {
+	background-position:90px -160px;
+	}
+
+#water {
+	background-position:90px -355px;
+	}
+
+
+#power {
+	background-position:90px -565px;
+	}
+
+#stains {
+	background-position:-128px 30px;
+	}
+
+#holiday {
+	background-position:-128px -160px;
+	}
+
+#fridge {
+	background-position:-128px -355px;
+	}
+
+#wall {
+	background-position:-128px -565px;
+	}
+	
+#sink {
+	background-position:-368px 22px;
+	}
+
+#furniture {
+	background-position:-368px -160px;
+	}
+
+#crib {
+	background-position:-368px -355px;
+	}
+
+#chimney {
+	background-position:-368px -565px;
+	}
+
+#tv {
+	background-position:-608px 22px;
+	}
+
+#printer {
+	background-position:-608px -160px;
+	}
+	
+#toilet {
+	background-position:-608px -358px;
+	}
+	
+#light {
+	background-position:-608px -565px;
+	}
+		
 	
 	}	
 	
