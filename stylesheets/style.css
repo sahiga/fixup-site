@@ -3,12 +3,13 @@ Theme Name: 	FixUp, based on Starkers
 Theme URI: 		http://viewportindustries.com/products/starkers
 Description: 	Customized Starkers theme for www.tryfixup.com
 Version: 		1.0
-Author: 		Curious Minds (customization), Elliot Jay Stocks & Keir Whitaker (Starkers)
+Author: 		CuriousMinds (customization), Elliot Jay Stocks & Keir Whitaker (Starkers)
 Author URI: 	http://viewportindustries.com
-Tags: 			starkers, naked, clean, basic
+Tags: 			responsive, blue, brown, gold, starkers
 */
 
-/* Web fonts */
+/* Web fonts
+-------------------------------------------------------------- */
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
@@ -23,7 +24,8 @@ Tags: 			starkers, naked, clean, basic
   src: local('Montserrat-Regular'), url(http://themes.googleusercontent.com/static/fonts/montserrat/v3/zhcz-_WihjSQC0oHJ9TCYL3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
 }
 
-/* Box sizing for all elements */
+/* Box sizing for all elements
+-------------------------------------------------------------- */
 * {
 	-webkit-box-sizing:border-box;
 	-moz-box-sizing:border-box;
@@ -37,7 +39,7 @@ Tags: 			starkers, naked, clean, basic
    http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
-*/
+-------------------------------------------------------------- */
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -45,7 +47,7 @@ a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
-dl, dt, dd, ol, ul, li,
+dl, dt, dd,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
@@ -64,9 +66,6 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
-ol, ul {
-	list-style: none;
-}
 blockquote, q {
 	quotes: none;
 }
@@ -80,13 +79,13 @@ table {
 	border-spacing: 0;
 }
 
-/* Base numbers and colors */
+/* Base numbers and colors
+-------------------------------------------------------------- */
 body {
 	font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size:0.9em;
 	line-height:1.6em;
-	color:#e1c7a7;
-	text-shadow:1px 1px 1px #1c1c1c;
+	color:#5a6074;
 }
 
 a:link, a:visited {
@@ -112,21 +111,26 @@ img, iframe {
 	}
 	
 section {
+	clear:both;
 	padding:2%;
 	overflow:hidden;
 	}
 
-p {
+p, li {
 	margin:3% 0;
 	}
 
 .container {
 	width:60%;
+	max-width:980px;
 	margin:0 auto;
 	}	
 
-h1 {
+h1, h2, h3, h4, h5 {
 	font-family:'Montserrat', Helvetica, Arial, sans-serif;
+	}
+
+h1 {
 	font-weight:700;
 	margin:2% 0;
 	font-size:3em;
@@ -134,14 +138,110 @@ h1 {
 	}
 	
 h2 {
-	font-family:'Montserrat', Helvetica, Arial, sans-serif;
 	font-weight:400;
 	margin:3% 0 1% 0;
 	font-size:1.4em;
 	color:#ebdacd;
 	}
 	
-/* Header (Logo + App Store button) */
+hr {
+	margin:8% 0;
+	border:1px solid #d6dcee;
+	}
+	
+strong {
+	font-weight:700;
+	}
+	
+code {
+	font-family:monospace;
+	}
+	
+/* WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin:5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display:block;
+    margin:5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin:5px 0 20px 20px;
+}
+
+.alignleft {
+    float:left;
+    margin:5px 20px 20px 0;
+}
+
+.aligncenter {
+    display:block;
+    margin:5px auto 5px auto;
+}
+
+a img.alignright {
+    float:right;
+    margin:5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin:5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float:left;
+    margin:5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display:block;
+    margin-left:auto;
+    margin-right:auto
+}
+
+.wp-caption {
+    background:#fff;
+    border:1px solid #edf1fd;
+    max-width:96%; /* Image does not overflow the content area */
+    padding:5px 3px 10px;
+    text-align:center;
+}
+
+.wp-caption.alignnone {
+    margin:5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin:5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin:5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border:0 none;
+    height:auto;
+    margin:0;
+    max-width:98.5%;
+    padding:0;
+    width:auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size:11px;
+    line-height:17px;
+    margin:0;
+    padding:0 4px 5px;
+}
+
+/* Header (Logo + App Store button)
+-------------------------------------------------------------- */
 header {
 	-moz-box-shadow:0 0 5px 5px #271d16;
 	-webkit-box-shadow:0 0 5px 5px #271d16;
@@ -162,13 +262,13 @@ header {
 	padding:20px 0;
 	}
 	
-/* Footer menu */
+/* Footer menu
+-------------------------------------------------------------- */
 footer {
 	display:block;
 	overflow:hidden;
 	padding:2%;
 	font-size:0.8em;
-	text-shadow:none;
 	}
 	
 footer p {
@@ -185,6 +285,7 @@ footer ul {
 footer li {
 	display:inline-block;
 	padding:0 2%;
+	margin:0;
 	background:url(../img/menu_divider.png) no-repeat bottom right;
 	}
 
@@ -201,7 +302,12 @@ footer a:hover, footer a:active {
 	color:#744f21;
 	}
 
-/* Hero section */
+
+
+/* HOMEPAGE
+-------------------------------------------------------------- */
+/* Section: Hero
+-------------------------------- */
 #hero {
 	background:url(../img/bg.png) top right no-repeat #744f21;
 	background-size:cover;
@@ -211,6 +317,7 @@ footer a:hover, footer a:active {
 	-webkit-box-shadow:inset 0 0 10px 0 #543712;
 	box-shadow:inset 0 0 10px 0 #543712;
 	padding:8% 2%;
+	text-shadow:1px 1px 1px #1c1c1c;
 	}
 
 .small {
@@ -225,8 +332,9 @@ footer a:hover, footer a:active {
 .shorter {
 	width:86%;
 	}
-	
-/* Watch video section */
+
+/* Section: Video
+-------------------------------- */
 #watch {
 	padding:3%;
 	background:url(../img/video_bg.png) top right #fff;
@@ -246,31 +354,17 @@ footer a:hover, footer a:active {
 	height:30%;
 	padding:8% 0 0 0;
 	}
-	
-	
-/* Three columns */
+
+/* Section: Three points
+-------------------------------- */
 #points {
+	color:#e1c7a7;
+	text-shadow:1px 1px 1px #1c1c1c;
 	background-color:#4c3a2c;
 	-moz-box-shadow:inset 0 0 10px 0 #271d16;
 	-webkit-box-shadow:inset 0 0 10px 0 #271d16;
 	box-shadow:inset 0 0 10px 0 #271d16;
 	}
-
-/*	
-#points div.col {
-	float:left;
-	width:26%;
-	margin:1% 5%;
-	}
-
-#points div.col:first-of-type {
-	margin:1% 4% 0 0;
-	}
-	
-#points div.col:last-of-type {
-	margin:1% 0 0 4%;
-	}
-*/
 	
 .divider {
 	float:left;
@@ -294,26 +388,11 @@ footer a:hover, footer a:active {
 	margin:0 0 0 4%;
 	}
 
-/* Browse-Connect-Fix section */
+/* Section: Browse-connect-fix
+-------------------------------- */
 #circles {
 	padding:5% 0;
 	}
-
-/*	
-#circles img.col {
-	float:left;
-	width:22%;
-	margin:0 2%;
-	}
-	
-#circles img.col:first-of-type {
-	margin:0 3% 0 0;
-	}
-	
-#circles img.col:last-of-type {
-	margin:0 0 0 3%;
-	}
-*/
 
 #circles img.left {
 	float:left;
@@ -348,17 +427,23 @@ footer a:hover, footer a:active {
 	padding:0 45%;
 	}
 	
-/* Problem-Solution section */
+/* Section: Problem-solution
+-------------------------------- */
 #solution {
-	background-color:#744f21;
+	color:#e1c7a7;
+	text-shadow:1px 1px 1px #1c1c1c;
+	background:#744f21;
 	-moz-box-shadow:inset 0 0 10px 0 #543712;
 	-webkit-box-shadow:inset 0 0 10px 0 #543712;
 	box-shadow:inset 0 0 10px 0 #543712;
 	}
-	
-/* ABOUT PAGE */
 
-/* Summary */
+
+
+/* ABOUT PAGE
+-------------------------------------------------------------- */
+/* Section: Summary
+-------------------------------- */
 #summary {
 	background:url(../img/summary.png) #4c392c;
 	background-size:cover;
@@ -370,11 +455,18 @@ footer a:hover, footer a:active {
 	padding:8% 2%;
 	}
 
-/* Grid of boxes */
+/* Section: Grid of boxes
+-------------------------------- */
 #grid {
-	background:#edf1fd;
+	background-image:url(../img/title-fixup.png), url(../img/bg-blue.png);
+	background-repeat:no-repeat, repeat;
+	background-position:20% 2%, top left;
 	}
 
+#grid h2 {
+	color:#33353e;
+	}
+	
 #grid_container {
 	top:0;
 	left:0;
@@ -413,73 +505,8 @@ footer a:hover, footer a:active {
 	display:none;
 	}
 
-
-#tire {
-	background-position:30px 30px;
-		}
-
-#camera {
-	background-position:30px -160px;
-	}
-
-#water {
-	background-position:30px -355px;
-	}
-
-
-#power {
-	background-position:30px -565px;
-	}
-
-#stains {
-	background-position:-188px 30px;
-	}
-
-#holiday {
-	background-position:-188px -160px;
-	}
-
-#fridge {
-	background-position:-188px -355px;
-	}
-
-#wall {
-	background-position:-188px -565px;
-	}
-	
-#sink {
-	background-position:-428px 22px;
-	}
-
-#furniture {
-	background-position:-428px -160px;
-	}
-
-#crib {
-	background-position:-428px -355px;
-	}
-
-#chimney {
-	background-position:-428px -565px;
-	}
-
-#tv {
-	background-position:-668px 22px;
-	}
-
-#printer {
-	background-position:-668px -160px;
-	}
-	
-#toilet {
-	background-position:-668px -358px;
-	}
-	
-#light {
-	background-position:-668px -565px;
-	}
-
-/* Masonry transitions */
+/* Masonry transitions
+-------------------------------- */
 .masonry,
 .masonry .masonry-brick {
  	-webkit-transition-duration: 0.7s;
@@ -505,46 +532,166 @@ footer a:hover, footer a:active {
 	transition-property: left, right, top;
 	}
 
-/* Company information */
+/* Section: Company information
+-------------------------------- */
 #contact {
-	background-color:#4c392c;
+	color:#e1c7a7;
+	text-shadow:1px 1px 1px #1c1c1c;
+	background-image:url(../img/title-contact.png), url(../img/bg-brown.png);
+	background-repeat:no-repeat, repeat;
+	background-position:20% 10%, top left;
 	-moz-box-shadow:inset 0 0 10px 0 #543712;
 	-webkit-box-shadow:inset 0 0 10px 0 #543712;
 	box-shadow:inset 0 0 10px 0 #543712;
 	}
-	
-/* #contact h2 {
-	color:#fce2d2;
-	}
-	
-#contact p {
-	color:#cdb09e;
-	} */
 
-/* FAQ */
+
+/* Section: FAQ
+-------------------------------- */
 #faq {
-	background:#edf1fd;
+	background-image:url(../img/title-faq.png), url(../img/bg-blue.png);
+	background-repeat:no-repeat, repeat;
+	background-position:20% 2%, top left;
 	}
 
-#grid h2, #faq h2 {	
+#faq h2 {	
 	color:#33353e;
-	text-shadow:none;
+	}
+
+
+/* TERMS & CONDITIONS, PRIVACY POLICY
+-------------------------------------------------------------- */
+#terms_privacy, .post {
+	background:url(../img/bg-blue.png) repeat;
+	-moz-box-shadow:inset 0 0 10px 0 #cbd1e3;
+	-webkit-box-shadow:inset 0 0 10px 0 #cbd1e3;
+	box-shadow:inset 0 0 10px 0 #cbd1e3;
 	}
 	
-#faq p {
-	color:#5a6074;
-	text-shadow:none;
+#terms_privacy h1, .post h1 {
+	font-weight:400;
+	font-size:2em;
+	}
+	
+#terms_privacy h2, .comments h2 {
+	color:inherit;
 	}
 
-/* Responsive media queries */
+
+/* BLOG
+-------------------------------------------------------------- */
+/* Comments
+-------------------------------- */
+
+.post-main {
+	width:80%;
+	float:left;
+	padding:0 4% 0 10%;
+	}
+
+
+.post-title {
+	color:inherit;
+	text-align:center;
+	text-transform:uppercase;
+	}
+	
+.post-meta {
+	font-style:italic;
+	text-align:center;
+	}
+
+.comment-icons {
+	float:left;
+	}
+
+.count {
+	background:url(../img/blog-count.png) no-repeat;
+	text-shadow:-1px -1px 1px #b8babf;
+	font-size:1.7em;
+	padding:18px;
+	height:70px;
+	width:70px;
+	}
+
+.count a {
+	border:0;
+	}
+	
+.comment-icons hr {
+	width:60px;
+	margin:20px 0 30px 0;
+	}
+	
+.social {
+	margin:20px 10px;
+	}
+	
+input, textarea {
+	display:block;
+	clear:both;
+	padding:8px;
+	font-family:Helvetica, Arial, sans-serif;
+	font-size:0.9em;
+	color:#5a6074;
+	border:1px solid #adb4c7;
+	-webkit-border-radius:6px;
+	-moz-border-radius:6px;
+	-ms-border-radius:6px;
+	-o-border-radius:6px;
+	border-radius:6px;
+	-moz-box-shadow:inset 0 0 1px 1px #d6dcee;
+	-webkit-box-shadow:inset 0 0 1px 1px #d6dcee;
+	box-shadow:inset 0 0 1px 1px #d6dcee;
+	}
+	
+label {
+	display:block;
+	float:left;
+	}
+	
+.required {
+	float:left;
+	}
+	
+label, .form-allowed-tags {
+	font-size:0.9em;
+	}
+	
+#submit {
+	background:url(../img/button-comment.png);
+	float:right;
+	border:0;
+	width:142px;
+	height:40px;
+	cursor:pointer;
+	}
+
+
+/* Responsive media queries
+-------------------------------------------------------------- */
 @media (max-width:1500px) {
-	header div.container {
-		padding:0 4%;
+	.container, #watch, #points, #circles, #faq, #contact {
+		width:auto;
+		padding:2% 4%;
+		}
+	
+	#grid {
+		background-image:url(../img/title-fixup.png), url(../img/bg-blue.png);
+		background-repeat:no-repeat, repeat;
+		background-position:10% 2%, top left;
+		}
+
+	#contact {
+		background-image:url(../img/title-contact.png), url(../img/bg-brown.png);
+		background-repeat:no-repeat, repeat;
+		background-position:10% 10%, top left;
 		}
 		
-	.container, #hero, #watch, #points, #circles {
-		width:auto;
-		padding:4%;
+	#faq {
+		background-image:url(../img/title-faq.png), url(../img/bg-blue.png);
+		background-repeat:no-repeat, repeat;
+		background-position:10% 2%, top left;
 		}
 	}
 	
@@ -557,9 +704,39 @@ footer a:hover, footer a:active {
 	.short, .shorter {
 		width:auto;
 		}
+		
+	#grid {
+		background-image:url(../img/title-fixup.png), url(../img/bg-blue.png);
+		background-repeat:no-repeat, repeat;
+		background-position:2% 2%, top left;
+		}
+		
+	#contact {
+		background-image:url(../img/title-contact.png), url(../img/bg-brown.png);
+		background-repeat:no-repeat, repeat;
+		background-position:2% 10%, top left;
+		}
+		
+	#faq {
+		background-image:url(../img/title-faq.png), url(../img/bg-blue.png);
+		background-repeat:no-repeat, repeat;
+		background-position:2% 2%, top left;
+		}
+		
+	.post-main {
+		float:none;
+		clear:both;
+		width:100%;
+		padding:0;
+		}
+	
+	.comment-icons {
+		display:none;
+		}
+	
 	}	
 	
-@media (max-width:1000px) {
+@media (max-width:1040px) {
 	#video {
 		margin:0 auto;
 		}
@@ -598,7 +775,6 @@ footer a:hover, footer a:active {
 		display:block;
 		background:transparent;
 		}
-		
 	}
 	
 @media (max-width:768px) {
@@ -613,72 +789,6 @@ footer a:hover, footer a:active {
 		text-align:center;
 	}
 
-#tire {
-	background-position:90px 30px;
-		}
-
-#camera {
-	background-position:90px -160px;
-	}
-
-#water {
-	background-position:90px -355px;
-	}
-
-
-#power {
-	background-position:90px -565px;
-	}
-
-#stains {
-	background-position:-128px 30px;
-	}
-
-#holiday {
-	background-position:-128px -160px;
-	}
-
-#fridge {
-	background-position:-128px -355px;
-	}
-
-#wall {
-	background-position:-128px -565px;
-	}
-	
-#sink {
-	background-position:-368px 22px;
-	}
-
-#furniture {
-	background-position:-368px -160px;
-	}
-
-#crib {
-	background-position:-368px -355px;
-	}
-
-#chimney {
-	background-position:-368px -565px;
-	}
-
-#tv {
-	background-position:-608px 22px;
-	}
-
-#printer {
-	background-position:-608px -160px;
-	}
-	
-#toilet {
-	background-position:-608px -358px;
-	}
-	
-#light {
-	background-position:-608px -565px;
-	}
-
-
 	#video {
 		width:auto;
 		}
@@ -687,6 +797,10 @@ footer a:hover, footer a:active {
 @media (max-width:600px) {
 	body {
 		text-shadow:none;
+		}
+		
+	.container {
+		padding:0;
 		}
 	
 	p {
@@ -705,24 +819,33 @@ footer a:hover, footer a:active {
 		-o-box-shadow:none;
 		box-shadow:none;
 	}
-	
-	
-	#points, #solution, #contact, #faq {
-		width:80%;
-		margin:1% auto;
+
+
+	footer {
+		padding:10px 20px;
+		}
+
+	section {
+		padding:10px;
+		margin:2% auto;
+		}	
+
+	#points, #circles, #solution, #contact, #faq {
+		width:90%;
 		background:#fff;
 		color:#5a6074;
+		border-bottom:10px solid #edf1fd;
 		-webkit-box-shadow:none;
 		-moz-box-shadow:none;
 		-ms-box-shadow:none;
 		-o-box-shadow:none;
 		box-shadow:none;
 		}
-	
+
 	#hero, #summary {
+		width:90%;
+		padding:20px;
 		background:#5a6074;
-		width:80%;
-		margin:2% auto;
 		font-size:1em;
 		-webkit-border-radius:4px;
 		-moz-border-radius:4px;
@@ -735,11 +858,21 @@ footer a:hover, footer a:active {
 		-o-box-shadow:none;
 		box-shadow:none;
 		}
+
+	#grid {
+		width:95%;
+		background:#fff;
+		-webkit-border-radius:4px;
+		-moz-border-radius:4px;
+		-ms-border-radius:4px;
+		-o-border-radius:4px;
+		border-radius:4px;
+		}
 	
 	#watch, #faq {
 		background:#fff;
 		}
-		
+	
 	#video {
 		-webkit-box-shadow:none;
 		-moz-box-shadow:none;
@@ -787,87 +920,16 @@ footer a:hover, footer a:active {
 		display:none;
 		}
 		
-	#grid {
-		background:#fff;
-		}
-		
 	.cell {
-		background-color:#edf1fd;
-		margin:5px;
-		width:90%;
+		background:#edf1fd;
+		margin:5px 0;
+		width:100%;
 		-webkit-box-shadow:none;
 		-moz-box-shadow:none;
 		-ms-box-shadow:none;
 		-o-box-shadow:none;
 		box-shadow:none;
 		}
-		
-		
-#tire {
-	background-position:10px 30px;
-		}
-
-#camera {
-	background-position:90px -160px;
-	}
-
-#water {
-	background-position:90px -355px;
-	}
-
-
-#power {
-	background-position:90px -565px;
-	}
-
-#stains {
-	background-position:-128px 30px;
-	}
-
-#holiday {
-	background-position:-128px -160px;
-	}
-
-#fridge {
-	background-position:-128px -355px;
-	}
-
-#wall {
-	background-position:-128px -565px;
-	}
-	
-#sink {
-	background-position:-368px 22px;
-	}
-
-#furniture {
-	background-position:-368px -160px;
-	}
-
-#crib {
-	background-position:-368px -355px;
-	}
-
-#chimney {
-	background-position:-368px -565px;
-	}
-
-#tv {
-	background-position:-608px 22px;
-	}
-
-#printer {
-	background-position:-608px -160px;
-	}
-	
-#toilet {
-	background-position:-608px -358px;
-	}
-	
-#light {
-	background-position:-608px -565px;
-	}
-		
 	
 	}	
 	

@@ -226,14 +226,14 @@
 /* Custom dark brown tooltip style */
 .qtip-custom-brown {
 	background-color:#4c392c;
-	color:#cdb09e;
+	color:#e1c7a7;
 	border:1px solid #4c392c;
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
 	border-radius:5px;
 }	
 	.qtip-custom-brown .qtip-titlebar {
-		color:#fce2d2;
+		color:#ebdacd;
 		background-color:transparent;
 		font-family:'Montserrat', Helvetica, Arial, sans-serif;
 		font-weight:400;
