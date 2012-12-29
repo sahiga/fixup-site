@@ -1,4 +1,4 @@
-$(document).ready(function() {
+jQuery(document).ready(function($) {
 
 	/* Create tooltips for each box */
 	$(".cell").each(function() {
@@ -40,7 +40,7 @@ $(document).ready(function() {
 	/* Add sliding functionality to boxes */
 	$(function() {
 		/* Use grid_container as the structure */
-		$('#grid_container').masonry({
+		$('#grid-container').masonry({
 			/* Use cell classes as the bricks */
 			itemSelector: '.cell',
 			/* Set column width to be 1/4 the width of grid_container */

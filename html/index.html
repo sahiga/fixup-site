@@ -2,18 +2,19 @@
 <html>
 
 <head>
-	<title>FixUp</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link href="stylesheets/style.css" media="screen" rel="stylesheet" type="text/css" />
-	<link href="stylesheets/jquery.qtip.css" rel="stylesheet" type="text/css" />
+	<title>FixUp</title>
+	<link href="../stylesheets/style.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="../stylesheets/jquery.qtip.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body id="home">
+<body class="home">
 
 	<header>
-		<div class="container">
-			<a href="http://www.tryfixup.com"><img id="logo" src="img/fixup_logo.png" /></a>
-			<a href="https://itunes.apple.com/us/app/fixup/id554846760?mt=8"><img id="store" src="img/app_store.png" /></a>
+		<div class="header-container">
+			<a href="http://www.tryfixup.com"><img id="logo" src="../img/logo-fixup.png" alt="FixUp Logo" /></a>
+			<a href="https://itunes.apple.com/us/app/fixup/id554846760?mt=8"><img id="store" src="../img/logo-app-store.png" alt="Available on the App Store" /></a>
 		</div><!--/.container-->
 	</header>
 
@@ -25,7 +26,7 @@
 					Need a quick home repair? Try FixUp: a mobile marketplace of hundreds of expert plumbers, electricians, handymen, and other fixers ready to help you through real-time, two-way video, right when you request them.
 				</p>
 				<p>
-					<a href="https://itunes.apple.com/us/app/fixup/id554846760?mt=8"><img id="button" src="img/button.png"></a>
+					<a href="https://itunes.apple.com/us/app/fixup/id554846760?mt=8"><img id="button" src="../img/button-cta.png" alt="Try FixUp Now" /></a>
 				<p class="small">
 					Just $0.25-$5 per minute, with your Apple credits.
 				</p>
@@ -35,28 +36,28 @@
 
 	<section id="watch">
 		<div class="container">
-			<iframe id="video" width="560" height="315" src="http://www.youtube.com/embed/lKO42U8RxQ0?feature=player_embedded" frameborder="0" allowfullscreen></iframe>
-			<img id="arrow" src="img/arrow.png" />
+			<iframe id="video" width="560" height="315" src="http://www.youtube.com/embed/lKO42U8RxQ0?feature=player_embedded"></iframe>
+			<img id="arrow" src="../img/video-arrow.png" alt="See how FixUp works" />
 		</div>
 	</section><!--/#watch-->
 
 	<section id="points">
 		<div class="container">
-			<div class="left">
+			<div id="points-left">
 				<h2>Request your fixer</h2>
 				<p>
 					Use our iPhone app to select a fixer near you, in the specialty you need. (Hint: we've got everyone from general handymen to tech support.)
 				</p>
 			</div><!--/.left-->
-			<img class="divider" src="img/divider.png" />
-			<div class="mid">
+			<img class="divider" src="../img/divider-text.png" alt="divider" />
+			<div id="points-mid">
 				<h2>Fix anything fast</h2>
 				<p>
 					Connect to your fixer for a live video call through the app and get immediate guidance on your repair issue. (Average wait time: 2 minutes.)
 				</p>
 			</div><!--/.mid-->
-			<img class="divider" src="img/divider.png" />
-			<div class="right">
+			<img class="divider" src="../img/divider-text.png" alt="divider" />
+			<div id="points-right">
 				<h2>Wallet-free payment</h2>
 				<p>
 					Pay your fixer ahead of time with Apple credits. No tips, bills, or hidden costs: fixers charge only a low per-minute fee (25 cents to 5 dollars).
@@ -65,13 +66,13 @@
 		</div><!--/.container-->
 	</section><!--/#points-->
 
-	<section id="circles">
+	<section id="flowchart">
 		<div class="container">
-			<img class="left" src="img/circle_browse.png" />
-			<img class="flow" src="img/browse_to_connect.png" />
-			<img class="mid" src="img/circle_connect.png" />
-			<img class="flow" src="img/connect_to_fix.png" />
-			<img class="right" src="img/circle_fix.png" />
+			<img id="browse" src="../img/circle-browse.png" alt="Browse" />
+			<img class="flow" src="../img/browse-to-connect.png" alt="Browse to Connect" />
+			<img id="connect" src="../img/circle-connect.png" alt="Connect" />
+			<img class="flow" src="../img/connect-to-fix.png" alt="Connect to Fix" />
+			<img id="fix" src="../img/circle-fix.png" alt="Fix" />
 		</div><!--/.container-->
 	</section><!--/#circles-->
 
@@ -101,36 +102,19 @@
 		<div class="container">
 			<p>&copy; 2012-2013 FixUp. All rights reserved.</p>
 			<ul>
-				<li><a id="home" href="fixup.html">Home</a></li>
-				<li><a id="blog" href="/blog">Blog</a></li>
-				<li><a id="about" href="/about">About</a></li>
+				<li><a class="home" href="/">Home</a></li>
+				<li><a class="blog" href="/blog">Blog</a></li>
+				<li><a class="about" href="/about">About</a></li>
 				<li><a href="/fixers">Fixers: Join Us</a></li>
-				<li><a id="toc" href="/toc">Terms & Conditions</a></li>
-				<li><a id="pp" href="/pp">Privacy Policy</a></li>
+				<li><a class="toc" href="/terms">Terms & Privacy</a></li>
 			</ul>
 		</div><!--/.container-->
 	</footer>
 
-<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-<script type="text/javascript" src="js/jquery.masonry.min.js"></script>
-<script type="text/javascript" src="js/jquery.qtip.min.js"></script>
-<script type="text/javascript" src="js/fixup.js"></script>
+<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="../js/jquery.masonry.min.js"></script>
+<script type="text/javascript" src="../js/jquery.qtip.min.js"></script>
+<script type="text/javascript" src="../js/fixup.js"></script>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
