@@ -16,8 +16,9 @@
 <?php get_header(); ?>
 
 <!--Display front page layout-->
-<?php if ( is_front_page() ) {
-<?php query_posts('pagename=hero'); if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<?php if ( is_front_page() ): ?>
+<?php query_posts('pagename=hero'); if ( have_posts() ) : while ( have_posts() ) : the_post();
+?>
 <section id="hero">
 	<div class="container">
 		<div class="short">
@@ -26,7 +27,7 @@
 		</div><!--/.short-->
 	</div><!--/.container-->
 </section><!--/#hero-->
-<?php endwhile; wp_reset_query(); ?>
+<?php endwhile; endif; wp_reset_query(); ?>
 
 <?php query_posts('pagename=watch'); if ( have_posts() ) : while ( have_posts() ) : the_posts(); ?>
 <section id="watch">
@@ -34,7 +35,7 @@
 		<?php the_content(); ?>
 	</div><!--/.container-->
 </section><!--/#watch-->
-<?php endwhile; wp_reset_query(); ?>
+<?php endwhile; endif; wp_reset_query(); ?>
 
 <?php query_posts('pagename=points'); if ( have_posts() ) : while ( have_posts() ) : the_posts(); ?>
 <section id="points">
@@ -42,7 +43,7 @@
 		<?php the_content(); ?>
 	</div><!--/.container-->
 </section><!--/#points-->
-<?php endwhile; wp_reset_query(); ?>
+<?php endwhile; endif; wp_reset_query(); ?>
 
 <?php query_posts('pagename=flowchart'); if ( have_posts() ) : while ( have_posts() ) : the_posts(); ?>
 <section id="flowchart">
@@ -50,7 +51,7 @@
 		<?php the_content(); ?>
 	</div><!--/.container-->
 </section><!--/#flowchart-->
-<?php endwhile; wp_reset_query(); ?>
+<?php endwhile; endif; wp_reset_query(); ?>
 
 <?php query_posts('pagename=solution'); if ( have_posts() ) : while ( have_posts() ) : the_posts(); ?>
 <section id="solution">
@@ -58,12 +59,11 @@
 		<?php the_content(); ?>
 	</div><!--/.container-->
 </section><!--/#solution-->	
-<?php endwhile; wp_reset_query(); ?>
+<?php endwhile; endif; wp_reset_query(); ?>
 
-} 
 
 <!--Display about page layout-->
-elseif ( is_page( 'about' ) || '21' == $post->post_parent ) {
+<?php elseif ( is_page( 'about' ) || '21' == $post->post_parent ): ?>
 <?php query_posts('pagename=summary'); if ( have_posts() ) : while ( have_posts() ) : the_posts(); ?>
 <section id="summary">
 	<div class="container">
@@ -71,7 +71,7 @@ elseif ( is_page( 'about' ) || '21' == $post->post_parent ) {
 		<?php the_content(); ?>
 	</div><!--/.container-->
 </section><!--/#summary-->
-<?php endwhile; wp_reset_query(); ?>
+<?php endwhile; endif; wp_reset_query(); ?>
 
 <?php query_posts('pagename=grid'); if ( have_posts() ) : while ( have_posts() ) : the_posts(); ?>
 <section id="grid">
@@ -82,7 +82,7 @@ elseif ( is_page( 'about' ) || '21' == $post->post_parent ) {
 		</div><!--/#grid-container-->
 	</div><!--/.container-->
 </section><!--/#grid-->
-<?php endwhile; wp_reset_query(); ?>
+<?php endwhile; endif; wp_reset_query(); ?>
 
 <?php query_posts('pagename=contact'); if ( have_posts() ) : while ( have_posts() ) : the_posts(); ?>
 <section id="contact">
@@ -91,7 +91,7 @@ elseif ( is_page( 'about' ) || '21' == $post->post_parent ) {
 		<?php the_content(); ?>
 	</div><!--/.container-->
 </section><!--/#contact-->
-<?php endwhile; wp_reset_query(); ?>
+<?php endwhile; endif;  wp_reset_query(); ?>
 
 <?php query_posts('pagename=faq'); if ( have_posts() ) : while ( have_posts() ) : the_posts(); ?>
 <section id="faq">
@@ -100,18 +100,17 @@ elseif ( is_page( 'about' ) || '21' == $post->post_parent ) {
 		<?php the_content(); ?>
 	</div><!--/.container-->
 </section><!--/#faq-->
-<?php endwhile; wp_reset_query(); ?>
+<?php endwhile; endif; wp_reset_query(); ?>
 
-}
 
 <!--Default to full page layout-->
-else {
+<?php else: ?>
 <section id="full">
 	<div class="container">
 		<h1><?php the_title(); ?></h1>
 		<?php the_content(); ?>
 	</div><!--/.container-->
 </section><!--/#full-->
-} ?>
+<?php endif; ?>
 
 <?php get_footer(); ?>

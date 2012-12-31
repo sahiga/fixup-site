@@ -12,10 +12,8 @@
  * @since 		Starkers 4.0
  */
 ?>
-<div id="comments">
 	<?php if ( post_password_required() ) : ?>
 	<p>This post is password protected. Enter the password to view any comments</p>
-</div>
 
 	<?php
 			/* Stop the rest of comments.php from being processed,
@@ -25,15 +23,6 @@
 			return;
 		endif;
 	?>
-	
-	
-	<div class="comment-icons">
-		<p class="count"><?php comments_number(); ?></a>
-		<hr />
-		<a href="#"><img src="img/blog-twitter.png" class="social" alt="Share on Twitter" /></a>
-		<a href="http://www.facebook.com/sharer.php?u=http://tryfixup.com"><img src="img/blog-facebook.png" class="social" alt="Share on Facebook" /></a>
-		<a href="#"><img src="img/blog-google.png" class="social" alt="Share on Google+" /></a>
-	</div><!--/.comment-icons-->
 
 	<?php if ( have_comments() ) : ?>
 	
@@ -52,6 +41,4 @@
 	
 	<?php endif; ?>
 
-	<?php comment_form(); ?>
-
-</div><!-- #comments -->
+	<?php comment_form( array( '', '', '', '', '', '', '', '', '', '', '', 'label_submit' => ' ', ), '' ); ?>

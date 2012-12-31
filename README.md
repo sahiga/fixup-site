@@ -1,3 +1,3 @@
 fixup-site
 ==========
-HTML/CSS files and images for www.tryfixup.com.
+Code (HTML, CSS, JS, PHP) and images for www.tryfixup.com.

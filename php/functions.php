@@ -15,7 +15,7 @@
 	
 	======================================================================================================================== */
 
-	require_once( 'external/starkers-utilities.php' );
+	include_once ( 'external/starkers-utilities.php' );
 
 	/* ========================================================================================================================
 	
@@ -34,6 +34,7 @@
 	Actions and Filters
 	
 	======================================================================================================================== */
+	remove_action( 'wp_head', 'wp_generator' );
 	
 	add_action( 'wp_enqueue_scripts', 'fixup_script_enqueuer' );
 
@@ -62,7 +63,7 @@
 	 
 	function fixup_script_enqueuer() {
 		// Register stylesheets
-		wp_register_style( 'main', get_stylesheet_uri(), '', '1.0', 'screen');
+		// wp_register_style( 'main', get_stylesheet_uri(), '', '1.0', 'screen');
 		wp_register_style( 'qtip2_style', get_template_directory_uri() . '/jquery.qtip.css', '', '2.0.0', 'screen' );
 		
 		// Replace default WordPress jQuery with Google-hosted jQuery
@@ -72,10 +73,10 @@
 		// Register Masonry, qTip2, and custom JS
 		wp_register_script( 'masonry', get_template_directory_uri() . '/js/jquery.masonry.min.js', array('jquery'), '1.06', true );
 		wp_register_script( 'qtip2_script', get_template_directory_uri() . '/js/jquery.qtip.min.js', array('jquery'), '2.0.0', true);
-		wp_register_script( 'custom', get_template_directory_uri() . '/js/fixup.js', array('jquery', 'masonry', 'qtip2'), '1.0', true );
+		wp_register_script( 'custom', get_template_directory_uri() . '/js/fixup.js', array('jquery', 'masonry', 'qtip2_script'), '1.0', true );
 		
 		// Load main stylesheet for all pages
-		wp_enqueue_style( 'main' );
+		// wp_enqueue_style( 'main' );
 		
 		// Load jQuery, Masonry, qTip2 (script & stylesheet), and custom JS for about page
 		if ( is_page( 'about' ) || '21' == $post->post_parent ) {

@@ -11,13 +11,11 @@
 ?>
 <?php get_header(); ?>
 
-<?php if ( have_posts() ): ?>
-<h1>Company Blog <?php echo single_cat_title( '', false ); ?></h2>
-<ol>
-<?php while ( have_posts() ) : the_post(); ?>
-	<li>
 		<article class="post">
 			<div class="container">
+<?php if ( have_posts() ): ?>
+<h1 class="post-title"><a href="#"><?php echo single_cat_title( 'FixUp Company ', false ); ?></h1>
+<?php while ( have_posts() ) : the_post(); ?>
 				<div class="post-main">
 					<h2 class="post-title"><a href="<?php esc_url( the_permalink() ); ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 					<p class="post-meta"><time datetime="<?php the_time( 'm-d-Y' ); ?>" pubdate><?php the_date(); ?> <?php the_time(); ?></time> <?php get_the_author(); ?> <?php comments_popup_link('Leave a Comment', '1 Comment', '% Comments'); ?></p>
@@ -26,13 +24,23 @@
 					</div><!--/.entry-->
 					<hr />
 				</div><!--/.post-main-->
+<?php endwhile; ?>
+<?php else: ?>
+<h2>No posts to display in <?php echo single_cat_title( 'FixUp Company ', false ); ?></h2>
+<?php endif; ?>
+
+
+<!--Display comment and share icons-->
+<div class="comment-icons">
+	<p class="count"><?php comments_number( '0', '1', '%' ); ?></p>
+	<hr />
+	<a href="#"><img src="<?php echo get_template_directory_uri() ?>/img/blog-twitter.png" class="social" alt="Share on Twitter" /></a>
+	<a href="#"><img src="<?php echo get_template_directory_uri() ?>/img/blog-facebook.png" class="social" alt="Share on Facebook" /></a>
+	<a href="#"><img src="<?php echo get_template_directory_uri() ?>/img/blog-google.png" class="social" alt="Share on Google+" /></a>	
+</div><!--/.comment-icons-->
+
+
 			</div><!--/.container-->
 		</article><!--/.post-->
-	</li>
-<?php endwhile; ?>
-</ol>
-<?php else: ?>
-<h2>No posts to display in <?php echo single_cat_title( '', false ); ?></h2>
-<?php endif; ?>
 
 <?php get_footer(); ?>
