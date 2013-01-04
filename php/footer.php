@@ -1,16 +1,15 @@
 	<footer>
-		<div class="container">
+		<nav class="container">
 			<p>&copy; <?php echo date('Y'); ?> FixUp. All rights reserved.</p>
-			<ul>
+			<ul id="fnav">
 				<li><a class="home" href="<?php echo home_url(); ?>">Home</a></li>
 				<li><a class="blog" href="/category/blog">Blog</a></li>
 				<li><a class="about" href="/about">About</a></li>
 				<li><a href="http://api.tryfixup.com/fixers">Fixers: Join Us</a></li>
 				<li><a class="terms" href="/terms">Terms & Privacy</a></li>
-			</ul>
-		</div><!--/.container-->
+			</ul><!--/#fnav-->
+		</nav><!--/.container-->
 	</footer>
-
 
 <?php wp_footer(); ?>
 	</body>
