@@ -42,11 +42,11 @@
 
 		<!--Display comment and share icons-->
 		<div class="comment-icons">
-			<p class="count"><?php comments_number( '0', '1', '%' ); ?></p>
+			<p class="count"><?php comments_popup_link( '0', '1', '%' ); ?></p>
 			<hr />
-			<a href="#"><img src="<?php echo get_template_directory_uri() ?>/img/blog-twitter.png" class="social" alt="Share on Twitter" /></a>
-			<a href="#"><img src="<?php echo get_template_directory_uri() ?>/img/blog-facebook.png" class="social" alt="Share on Facebook" /></a>
-			<a href="#"><img src="<?php echo get_template_directory_uri() ?>/img/blog-google.png" class="social" alt="Share on Google+" /></a>	
+			<a href="http://www.twitter.com/share?text=<?php the_title(); ?>&amp;url=<?php the_permalink(); ?>" title="Share on Twitter" target="_blank"><img src="<?php echo get_template_directory_uri() ?>/img/blog-twitter.png" class="social" alt="Share on Twitter" /></a>
+			<a href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>&t=<?php the_title(); ?>" title="Share on Twitter" target="_blank"><img src="<?php echo get_template_directory_uri() ?>/img/blog-facebook.png" class="social" alt="Share on Facebook" /></a>
+			<a href="http://plus.google.com/share?url=<?php the_permalink(); ?>" title="Share on Twitter" target="_blank"><img src="<?php echo get_template_directory_uri() ?>/img/blog-google.png" class="social" alt="Share on Google+" /></a>	
 		</div><!--/.comment-icons-->
 	</div><!--/.container-->
 </article><!--/.post-->

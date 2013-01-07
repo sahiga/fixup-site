@@ -7,6 +7,8 @@
 				<li><a class="about" href="/about">About</a></li>
 				<li><a href="http://api.tryfixup.com/fixers">Fixers: Join Us</a></li>
 				<li><a class="terms" href="/terms">Terms & Privacy</a></li>
+				<li><a href="https://twitter.com/TryFixUp">Follow on Twitter</a></li>
+				<li><a href="https://www.facebook.com/pages/FixUp/277899058990188">Like on Facebook</a></li>
 			</ul><!--/#fnav-->
 		</nav><!--/.container-->
 	</footer>

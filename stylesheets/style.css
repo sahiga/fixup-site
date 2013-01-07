@@ -246,7 +246,7 @@ a img.aligncenter {
     padding: 0 4px 5px;
 }
 
-/* Header (Logo + App Store button)
+/* Header
 -------------------------------- */
 header {
 	-webkit-box-shadow: 0 0 5px 5px #271d16;
@@ -271,6 +271,20 @@ header {
 	float: right;
 	padding: 20px 0;
 }
+
+
+/* Social
+-------------------------------- */
+#tw {
+	float: right;
+	padding: 30px 0 0 10px;
+}
+	
+#fb {
+	float: right;
+	padding: 30px;
+}
+
 
 /* Menus
 -------------------------------- */
@@ -305,7 +319,6 @@ footer p {
 
 #hnav li:last-child {
 	background: transparent;
-	padding: 0 30px 0 10px;
 }
 
 #fnav {
@@ -315,7 +328,7 @@ footer p {
 
 #fnav li {
 	display: inline-block;
-	padding: 0 2%;
+	padding: 0 1%;
 	margin: 0;
 	background: url("img/divider-menu.png") no-repeat bottom right;
 }
@@ -324,14 +337,14 @@ footer p {
 	background: transparent;
 }
 
-nav a:link,
-nav a:visited {
+#fnav a:link,
+#fnav a:visited {
 	color: #c7c7c7;
 	border: 0;
 }
 
-nav a:hover,
-nav a:active {
+#fnav a:hover,
+#fnav a:active {
 	color: #744f21;
 }
 
@@ -841,9 +854,9 @@ label, .form-allowed-tags {
 	#jump-menu {
 		display: block;
 		padding: 5px;
-		background: #ebdacd;
+		background: #edf1fd;
 		text-align: right;
-		border: 1px solid #ebdacd;
+		border: 1px solid #edf1fd;
 		-webkit-border-radius: 0 0 4px 4px;
 		-moz-border-radius:    0 0 4px 4px;
 		-ms-border-radius: 	   0 0 4px 4px;
@@ -923,7 +936,7 @@ label, .form-allowed-tags {
 		padding: 0;
 	}
 	
-	p {
+	p, ul {
 		font-size: 0.9em;
 	}
 		
@@ -937,6 +950,7 @@ label, .form-allowed-tags {
 	}
 
 	#jump-menu {
+		background: #ebdacd;
 		border: 0;
 		-webkit-border-radius: 0;
 		-moz-border-radius:    0;
@@ -944,7 +958,7 @@ label, .form-allowed-tags {
 		-o-border-radius: 	   0;
 		border-radius: 		   0;
 	}
-
+	
 	footer {
 		padding: 10px 20px;
 	}
@@ -977,7 +991,7 @@ label, .form-allowed-tags {
 		border-radius: 		   4px;
 	}
 	
-	#watch, #faq {
+	#faq {
 		background: #fff;
 	}
 	
@@ -994,7 +1008,7 @@ label, .form-allowed-tags {
 		margin: 0 auto;
 	}
 	
-	#store {
+	#store, #fb, #tw, #watch {
 		display: none;
 	}
 	
@@ -1022,8 +1036,8 @@ label, .form-allowed-tags {
 	#fix {
 		float: none;
 		margin: 0 auto;
-		width: 110px;
-		height: 135px;
+		width: 200px;
+		height: 245px;
 	}
 	
 	.flow {

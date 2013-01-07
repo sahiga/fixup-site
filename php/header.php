@@ -15,10 +15,12 @@
 		<body <?php body_class(); ?>>
 			<header>
 				<div id="header-container">
-					<div id="jump-menu"><a href="#fnav" id="jump-link">Learn more »</a></div>
+					<div id="jump-menu"><a href="#fnav" id="jump-link">Learn more &#9660;</a></div>
 					<nav>
 						<a href="http://www.tryfixup.com"><img id="logo" src="<?php echo get_template_directory_uri() ?>/img/logo-fixup.png" alt="FixUp Logo" /></a>
 						<a href="https://itunes.apple.com/us/app/fixup/id554846760?mt=8"><img id="store" src="<?php echo get_template_directory_uri() ?>/img/logo-app-store.png" alt="Available on the App Store" /></a>
+						<a href="https://www.facebook.com/pages/FixUp/277899058990188"><img id="fb" src="<?php echo get_template_directory_uri() ?>/img/icon-facebook.png" alt="Like us on Facebook" /></a>
+						<a href="https://twitter.com/TryFixUp"><img id="tw" src="<?php echo get_template_directory_uri() ?>/img/icon-twitter.png" alt="Follow us on Twitter" /></a>
 						<ul id="hnav">
 							<li><a class="blog" href="/category/blog">Blog</a></li>
 							<li><a class="about" href="/about">About</a></li>
