@@ -53,12 +53,15 @@
 </section><!--/#flowchart-->
 <?php endwhile; endif; wp_reset_query(); ?>
 
-<?php query_posts('pagename=solution'); if ( have_posts() ) : while ( have_posts() ) : the_posts(); ?>
-<section id="solution">
+<?php query_posts('pagename=grid'); if ( have_posts() ) : while ( have_posts() ) : the_posts(); ?>
+<section id="grid">
 	<div class="container">
-		<?php the_content(); ?>
+		<h2><?php the_title(); ?></h2>
+		<div id="grid-container">
+			<?php the_content(); ?>
+		</div><!--/#grid-container-->
 	</div><!--/.container-->
-</section><!--/#solution-->	
+</section><!--/#grid-->
 <?php endwhile; endif; wp_reset_query(); ?>
 
 
@@ -71,17 +74,6 @@
 		<?php the_content(); ?>
 	</div><!--/.container-->
 </section><!--/#summary-->
-<?php endwhile; endif; wp_reset_query(); ?>
-
-<?php query_posts('pagename=grid'); if ( have_posts() ) : while ( have_posts() ) : the_posts(); ?>
-<section id="grid">
-	<div class="container">
-		<h2><?php the_title(); ?></h2>
-		<div id="grid-container">
-			<?php the_content(); ?>
-		</div><!--/#grid-container-->
-	</div><!--/.container-->
-</section><!--/#grid-->
 <?php endwhile; endif; wp_reset_query(); ?>
 
 <?php query_posts('pagename=contact'); if ( have_posts() ) : while ( have_posts() ) : the_posts(); ?>

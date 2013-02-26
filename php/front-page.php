@@ -52,14 +52,17 @@ while ( $query4->have_posts() ) : $query4->the_post(); ?>
 <?php endwhile; wp_reset_query(); wp_reset_postdata(); ?>
 
 <?php
-// Query for problem-solution section
-$query5 = new WP_Query( 'pagename=solution' );
+// Query for grid section
+$query5 = new WP_Query( 'pagename=grid' );
 while ( $query5->have_posts() ) : $query5->the_post(); ?>
-	<section id="solution">
-		<div class="container">
+<section id="grid">
+	<div class="container">
+		<h2><?php the_title(); ?></h2>
+		<div id="grid-container">
 			<?php the_content(); ?>
-		</div><!--/.container-->
-	</section><!--/#solution-->
+		</div><!--/#grid-container-->
+	</div><!--/.container-->
+</section><!--/#grid-->
 <?php endwhile; wp_reset_query(); wp_reset_postdata(); ?>
 
 <?php get_footer(); ?>

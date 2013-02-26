@@ -80,8 +80,8 @@
 		// Load main stylesheet for all pages
 		// wp_enqueue_style( 'main' );
 		
-		// Load jQuery, Masonry, qTip2 (script & stylesheet), and custom JS for about page
-		if ( is_page( 'about' ) || '21' == $post->post_parent ) {
+		// Load jQuery, Masonry, qTip2 (script & stylesheet), and custom JS for homepage
+		if ( is_front_page() ) {
 			wp_enqueue_style( 'qtip2_style' );
 			wp_enqueue_script( 'jquery' );
 			wp_enqueue_script( 'masonry' );

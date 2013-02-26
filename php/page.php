@@ -29,22 +29,9 @@ if ( is_page( 'about' ) || '21' == $post->post_parent ):
 		</section><!--/#summary-->
 	<?php endwhile; wp_reset_query(); wp_reset_postdata();
 
-	// Query for grid
-	$query7 = new WP_Query( 'pagename=grid' );
-	while ( $query7->have_posts() ) : $query7->the_post(); ?>
-		<section id="grid">
-			<div class="container">
-				<h2><?php the_title(); ?></h2>
-				<div id="grid-container">
-					<?php the_content(); ?>
-				</div><!--/#grid-container-->
-			</div><!--/.container-->
-		</section><!--/#grid-->
-	<?php endwhile; wp_reset_query(); wp_reset_postdata();
-
 	// Query for contact section
-	$query8 = new WP_Query( 'pagename=contact' );
-	while ( $query8->have_posts() ) : $query8->the_post(); ?>
+	$query7 = new WP_Query( 'pagename=contact' );
+	while ( $query7->have_posts() ) : $query7->the_post(); ?>
 		<section id="contact">
 			<div class="container">
 				<h2><?php the_title(); ?></h2>
@@ -54,8 +41,8 @@ if ( is_page( 'about' ) || '21' == $post->post_parent ):
 	<?php endwhile; wp_reset_query(); wp_reset_postdata();
 
 	// Query for FAQ section
-	$query9 = new WP_Query( 'pagename=faq' );
-	while ( $query9->have_posts() ) : $query9->the_post(); ?>
+	$query8 = new WP_Query( 'pagename=faq' );
+	while ( $query8->have_posts() ) : $query8->the_post(); ?>
 		<section id="faq">
 			<div class="container">
 				<h2><?php the_title(); ?></h2>
