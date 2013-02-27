@@ -33,13 +33,6 @@ Tags:  			responsive, blue, brown, gold, starkers
   src: local('Bad Script Regular'), local('BadScript-Regular'), url(http://themes.googleusercontent.com/static/fonts/badscript/v2/rL_b2ND61EQmMOJ8CRr1fr3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
 }
 
-@font-face {
-  font-family: 'Playfair Display';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Playfair Display Bold Italic'), local('PlayfairDisplay-BoldItalic'), url(http://themes.googleusercontent.com/static/fonts/playfairdisplay/v7/n7G4PqJvFP2Kubl0VBLDENo6rfrboWJUlegBR-uMPb6glnMp3_3A8V8Ai8YosRtX.woff) format('woff');
-}
-
 /* Reset CSS
    http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -125,7 +118,7 @@ iframe {
 	
 section, article {
 	clear: both;
-	padding: 2%;
+	padding: 3%;
 	overflow: hidden;
 }
 
@@ -386,8 +379,8 @@ footer p {
 }
 
 .emph {
-	font-family: 'Playfair Display', Helvetica, Arial, sans-serif;
-	font-style: italic;
+	font-family: 'Bad Script', Helvetica, Arial, sans-serif;
+	font-size: 1.2em;
 }
 
 .emph a:link,
@@ -406,23 +399,23 @@ footer p {
 	width: 86%;
 }
 
-.intro {
+#intro {
 	counter-reset: li;
 	margin: 0 -60px;
 	width: 100%;
 }
 
-.intro > li {
+#intro > li {
 	list-style-type: none;
 	color: #fff;
 	margin: 0 20px;
 	font-weight: 600;
-	font-size: 1.8em;
+	font-size: 2.1em;
 	line-height: 1.5em;
 	border-bottom: 1px solid #4385b7;
 }
 
-.intro > li:before {
+#intro > li:before {
 	content: counter(li);
 	counter-increment: li;
 	margin: 0 20px 0 0;
@@ -431,26 +424,25 @@ footer p {
 
 /* Section: Video
 -------------------------------- */
-#watch {
-	padding: 3%;
+/* #watch {
 	background: url("img/bg-video.png") top right #fff;
 	background-size: 100%;
-}
+} */
 
 #video {
-	float: left;
+	margin: 0 auto;
 	-webkit-box-shadow: 0 0 5px 5px #bebebe;
 	-moz-box-shadow: 	0 0 5px 5px #bebebe;
 	-ms-box-shadow: 	0 0 5px 5px #bebebe;
 	-o-box-shadow: 		0 0 5px 5px #bebebe;
 	box-shadow: 		0 0 5px 5px #bebebe;
 }
-	
-#arrow {
-	float: left;
-	width: 30%;
-	height: 30%;
-	padding: 8% 0 0 0;
+
+#caption {
+	padding: 2% 0 0 0;
+	clear: both;
+	font-size: 1.5em;
+	text-align: center;
 }
 
 /* Section: Three points
@@ -473,22 +465,11 @@ footer p {
 	width: 9px;
 }
 
-#points-left {
+.points-col {
 	float: left;
-	width: 26%;
-	margin: 0 4% 0 0;
-}
-	
-#points-mid {
-	float: left;
-	width: 26%;
-	margin: 0 5%;
-}
-
-#points-right {
-	float: left;
-	width: 26%;
-	margin: 0 0 0 4%;
+	width: 30%;
+	margin: 0;
+	text-align: center;
 }
 
 /* Section: Flowchart
@@ -497,29 +478,16 @@ footer p {
 	padding: 5% 0;
 }
 
-#browse {
-	float: left;
-	width: 22%;
-	margin: 0 3% 0 0;
-}
-	
-#connect {
-	float: left;
-	width: 22%;
-	margin: 0 2%;
-}
-
-#fix {
-	float: left;
-	width: 22%;
-	margin: 0 0 0 3%;
+.circle {
+	width: 80%;
+	margin: 0 auto;
 }
 
 .flow {
 	float: left;
-	width: 8%;
-	height: 8%;
-	padding: 10% 0 0 2%;
+	width: 4%;
+	height: 4%;
+	padding: 10% 0 0 0;
 }
 	
 /* Section: Problem-solution
@@ -845,7 +813,7 @@ label, .form-allowed-tags {
 	
 	#header-container {
 		width: auto;
-		padding: 0 4%;
+		margin: 0 4%;
 	}
 		
 	#grid {
@@ -866,19 +834,15 @@ label, .form-allowed-tags {
 		background: url("img/bg-resize.png") no-repeat;
 		background-size: cover;
 	}
-	
-	.intro > li {
-		list-style-type: none;
-		color: #fff;
-		margin: 0 20px;
-		font-weight: 600;
-		font-size: 1.2em;
-		line-height: 1.5em;
-		border-bottom: 1px solid #4385b7;
-	}
 
 	.short, .shorter {
-		width: auto;
+		width: 90%;
+		float: none;
+		margin: 0 auto;
+	}
+	
+	#intro {
+		margin:0 -40px;
 	}
 		
 	#grid {
@@ -948,15 +912,6 @@ label, .form-allowed-tags {
 	#video {
 		float: none;
 		margin: auto;
-	}
-	
-	#points-left,
-	#points-mid,
-	#points-right {
-		float: none;
-		clear: both;
-		width: auto;
-		margin: 0;
 	}
 		
 	.divider {
@@ -1041,6 +996,25 @@ label, .form-allowed-tags {
 		box-shadow: 		none;
 	}
 
+	#intro > li {
+		color: #5a6074;
+		font-size: 1.4em;
+		text-align: center;
+	}
+
+	#intro > li:before {
+		content: '';
+		counter-increment: none;
+		margin: 0 20px 0 0;
+	}
+	
+	.points-col {
+		float: none;
+		clear: both;
+		width: auto;
+		margin: 0;
+	}
+
 	#grid {
 		width: 95%;
 		background: #fff;
@@ -1090,17 +1064,12 @@ label, .form-allowed-tags {
 	.small {
 		text-align: center;
 	}
-		
-	#browse,
-	#connect,
-	#fix {
-		float: none;
-		margin: 0 auto;
-		width: 200px;
-		height: 245px;
+	
+	.circle {
+		width: 40%;
 	}
 	
-	.flow {
+	.emph, .flow {
 		display: none;
 	}
 		
@@ -1118,36 +1087,4 @@ label, .form-allowed-tags {
 	textarea {
 		width: 300px;
 	}
-}	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+}

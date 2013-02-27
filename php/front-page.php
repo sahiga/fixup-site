@@ -11,7 +11,6 @@ while ( $query1->have_posts() ) : $query1->the_post(); ?>
 	<section id="hero">
 		<div class="container">
 			<div class="short">
-				<h1><?php the_title(); ?></h1>
 				<?php the_content(); ?>
 			</div><!--/.short-->
 		</div><!--/.container-->
@@ -41,20 +40,9 @@ while ( $query3->have_posts() ) : $query3->the_post(); ?>
 <?php endwhile; wp_reset_query(); wp_reset_postdata(); ?>
 
 <?php
-// Query for browse-connect-fix section
-$query4 = new WP_Query( 'pagename=flowchart' );
-while ( $query4->have_posts() ) : $query4->the_post(); ?>
-	<section id="flowchart">
-		<div class="container">
-			<?php the_content(); ?>
-		</div><!--/.container-->
-	</section><!--/#flowchart-->
-<?php endwhile; wp_reset_query(); wp_reset_postdata(); ?>
-
-<?php
 // Query for grid section
-$query5 = new WP_Query( 'pagename=grid' );
-while ( $query5->have_posts() ) : $query5->the_post(); ?>
+$query4 = new WP_Query( 'pagename=grid' );
+while ( $query4->have_posts() ) : $query4->the_post(); ?>
 <section id="grid">
 	<div class="container">
 		<h2><?php the_title(); ?></h2>
