@@ -94,7 +94,7 @@
 	// Include Google Analytics Tracking Code
 	
 	function google_analytics() {
-		$propertyID = 'UA-36454513-1'; // GAP Property ID
+		$propertyID = 'UA-38944181-1'; // GAP Property ID
 		?>
 		<script type="text/javascript">
 			var _gaq = _gaq || [];

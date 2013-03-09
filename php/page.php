@@ -19,8 +19,8 @@ get_header();
 // Display about page layout
 if ( is_page( 'about' ) || '21' == $post->post_parent ):
 	// Query for summary section
-	$query6 = new WP_Query( 'pagename=summary' );
-	while ( $query6->have_posts() ) : $query6->the_post(); ?>
+	$query5 = new WP_Query( 'pagename=summary' );
+	while ( $query5->have_posts() ) : $query5->the_post(); ?>
 		<section id="summary">
 			<div class="container">
 				<h1><?php the_title(); ?></h1>
@@ -30,8 +30,8 @@ if ( is_page( 'about' ) || '21' == $post->post_parent ):
 	<?php endwhile; wp_reset_query(); wp_reset_postdata();
 
 	// Query for contact section
-	$query7 = new WP_Query( 'pagename=contact' );
-	while ( $query7->have_posts() ) : $query7->the_post(); ?>
+	$query6 = new WP_Query( 'pagename=contact' );
+	while ( $query6->have_posts() ) : $query6->the_post(); ?>
 		<section id="contact">
 			<div class="container">
 				<h2><?php the_title(); ?></h2>
@@ -40,17 +40,16 @@ if ( is_page( 'about' ) || '21' == $post->post_parent ):
 		</section><!--/#contact-->
 	<?php endwhile; wp_reset_query(); wp_reset_postdata();
 
-	// Query for FAQ section
-	$query8 = new WP_Query( 'pagename=faq' );
-	while ( $query8->have_posts() ) : $query8->the_post(); ?>
+// Display FAQ layout
+elseif ( is_page ( 'faq') || '27' == $post->post_parent ):
+	while ( have_posts() ) : the_post(); ?>
 		<section id="faq">
 			<div class="container">
 				<h2><?php the_title(); ?></h2>
 				<?php the_content(); ?>
 			</div><!--/.container-->
 		</section><!--/#faq-->
-	<?php endwhile; wp_reset_query(); wp_reset_postdata();
-
+	<?php endwhile;
 
 // Default to full page layout
 else:
